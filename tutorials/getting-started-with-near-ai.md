@@ -234,6 +234,8 @@ or press **Ctrl + C**.
 | `Agent not found` | Ensure you are running the command from the correct directory |
 | `Python 3.13+ not supported` | Use Python 3.11 (`brew install python@3.11`) and create a new virtual environment |
 | `Login issues with NEAR Wallet` | Try `nearai logout` and `nearai login` again |
+| `error: command 'gcc-11' failed: No such file or directory` | **Solution:** <br> - Install gcc-11: `sudo apt update && sudo apt install gcc-11` <br> - OR create a symlink: `sudo ln -s $(which gcc) /usr/bin/gcc-11` <br> - OR set the compiler variable: `export CC=gcc` before installing nearai |
+
 
 ---
 
